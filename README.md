@@ -1,7 +1,5 @@
-## Context: MuseMe Music Genre Recommendation System
+## Context: MuseMe Music Genre Classification System
 Music Genre Classification is one of the many branches of Music Information Retrieval, which encompasses beat tracking, music generation, recommender systems, track separation, and instrument recognition etc. Music analysis is a diverse field as each music session represents a distinct moment for the user, which makes describing and quanitiying this moment an interesting challenge in the Data Science field.
-
-Streaming music is now mainstream, fans have unprecedented music access, making personalizedd music discovery more important than ever. The world’s leading digital music services rely on creating unique taste profiles for their users in order to make playlists more personal, recommendations more relevant, and discovery more social. However, the current recommendation systems that's based off of listeners who listen to similar artists is only effective for major artists with an extensive fan following and largely miscategorizes new creators. Incorportating a new Recommendation System based off of similar audio proterties, rather than the listeners, in order to cluster similar styles together can help compensate for this discrepancy.
 
 For the purpose of this study, these top 5 music genres will be used as classifers:
 - RocknRoll
@@ -10,13 +8,12 @@ For the purpose of this study, these top 5 music genres will be used as classife
 - Indie
 - Pop
 
-## Goal: Help new customers acquire more loyal music fans by delivering unique, predictive music discovery experiences.
+## Goal: Distinguish between Music Genres based on Song Audio Features
 #### Classification of Music Genres
-- predict music genre by its audio features for 
-#### Personal Playlisting
-- predictive playlists that get smarter over time with machine learning and end-user tuning
-- predictive playlisting that adjusts acoustically to each fan’s taste and context
-- digital understanding of each individual’s personal music taste -> captures live playback behavior (artist plays, song plays, seeds, skips, bans, favorites, and more) and uses it to personalize playlists, radio, and the rest of the discovery experience.
+- predict music genre by song audio features (data sourced from songDB.tsv)
+
+**Conclusion for Music Genre Prediction**: The logistic regression model applied to the modified songDB.tsv dataset was successfully able to predict music genre based off of the audio features found in the dataset with 78% accuracy. Further investigation and modification of this model is necessary in order to prove if the audio features in this dataset are truly indicative of the song, to prove that audio feature extraction of the songs is can be consistently repeated, and finally, a neural network featuring several layers of classification and modification will further the accuracy of this model in order to create a real-time predictive model.
+
 
 ## Acknowledgements
 This work is a simplification from the Kaggle dataset posted at https://www.kaggle.com/grasslover/spotify-music-genre-list#songDb.tsv and the work of The Echo Nest at http://the.echonest.com/.
